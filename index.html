@@ -1,34 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
     <title>Héctor Macín</title>
 </head>
+
 <body>
     <header>
-        <a href="">
-            <img src="" alt="">
+        <a class="no-link-style open-menu-icon" id="open-menu-icon" href="">
+            <svg width="47" height="47" viewBox="0 0 47 47" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                    <path id="hamburger-svg-path-1" stroke="#272424" stroke-width="3" d="M1.5 1.5h44v44h-44z" />
+                    <path id="hamburger-svg-path-2" fill="#000000"
+                        d="M7.581 10.613h32.597v3.79H7.581zM7.581 21.226h32.597v3.79H7.581zM7.581 31.839h32.597v3.79H7.581z" />
+                </g>
+            </svg>
         </a>
-        <nav>
+        <nav id="menu">
             <ul>
-                <li>HOME</li>
-                <li>PORTFOLIO</li>
-                <li>FILM & VIDEO</li>
-                <li>ABOUT ME</li>
-                <li>CONTACT</li>
-                <li></li>
+                <li class="no-list-style close-menu-link">
+                    <a class="no-link-style" href=""><img src="./src/assets/close-menu.svg"
+                            alt="Ícono para cerrar menú"></a>
+                </li>
+                <li class="no-list-style section-links">
+                    <a class="no-link-style" id="home-link" href="">HOME</a>
+                </li>
+                <li class="no-list-style section-links">
+                    <a class="no-link-style" href="">PORTFOLIO</a>
+                </li>
+                <li class="no-list-style section-links">
+                    <a class="no-link-style" href="">FILM & VIDEO</a>
+                </li>
+                <li class="no-list-style section-links">
+                    <a class="no-link-style" href="">ABOUT ME</a>
+                </li>
+                <li class="no-list-style section-links">
+                    <a class="no-link-style" href="">CONTACT</a>
+                </li>
+                <li class="no-list-style social-media-links">
+                    <a href=""><img src="./src/assets/logo-facebook.svg" alt="Logo de Facebook"></a>
+                    <a href=""><img src="./src/assets/logo-twitter.svg" alt="Logo de Twitter"></a>
+                    <a href=""><img src="./src/assets/logo-linkedin.svg" alt="Logo de LinkedIn"></a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <article id="home"></article>
+        <article class="home active" id="home"></article>
         <article id="portfolio"></article>
         <article id="film-video"></article>
         <article id="about"></article>
         <article id="contact"></article>
     </main>
+    <script src="./src/index.js"></script>
 </body>
+
 </html>
