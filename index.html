@@ -24,23 +24,23 @@
         <nav id="menu">
             <ul>
                 <li class="no-list-style close-menu-link">
-                    <a class="no-link-style" href=""><img src="./src/assets/close-menu.svg"
+                    <a class="no-link-style" id="close-menu-icon" href=""><img src="./src/assets/close-menu.svg"
                             alt="Ícono para cerrar menú"></a>
                 </li>
-                <li class="no-list-style section-links">
-                    <a class="no-link-style" id="home-link" href="">HOME</a>
+                <li class="no-list-style section-links-container">
+                    <a class="no-link-style section-links home" href="">HOME</a>
                 </li>
-                <li class="no-list-style section-links">
-                    <a class="no-link-style" href="">PORTFOLIO</a>
+                <li class="no-list-style section-links-container portfolio">
+                    <a class="no-link-style section-links portfolio" href="">PORTFOLIO</a>
                 </li>
-                <li class="no-list-style section-links">
-                    <a class="no-link-style" href="">FILM & VIDEO</a>
+                <li class="no-list-style section-links-container ">
+                    <a class="no-link-style section-links film" href="">FILM & VIDEO</a>
                 </li>
-                <li class="no-list-style section-links">
-                    <a class="no-link-style" href="">ABOUT ME</a>
+                <li class="no-list-style section-links-container">
+                    <a class="no-link-style section-links about" href="">ABOUT ME</a>
                 </li>
-                <li class="no-list-style section-links">
-                    <a class="no-link-style" href="">CONTACT</a>
+                <li class="no-list-style section-links-container">
+                    <a class="no-link-style section-links contact" href="">CONTACT</a>
                 </li>
                 <li class="no-list-style social-media-links">
                     <a href=""><img src="./src/assets/logo-facebook.svg" alt="Logo de Facebook"></a>
@@ -51,11 +51,13 @@
         </nav>
     </header>
     <main>
-        <article class="home active" id="home"></article>
-        <article id="portfolio"></article>
-        <article id="film-video"></article>
-        <article id="about"></article>
-        <article id="contact"></article>
+        <article class="pages home-section active" id="home">
+            <h1 class="home-title">HÉCTOR MACÍN</h1>
+        </article>
+        <article class="pages" id="portfolio"></article>
+        <article class="pages" id="film"></article>
+        <article class="pages" id="about"></article>
+        <article class="pages" id="contact"></article>
     </main>
     <script src="./src/index.js"></script>
 </body>

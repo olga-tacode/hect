@@ -79,14 +79,14 @@ ul {
     height: 80%;
 }
 
-.section-links>a {
+.section-links-container>a {
     color: #000000;
     font-size: 2em;
     padding-left: 10%;
 }
 
-.section-links>a:focus,
-.section-links>a:hover {
+.section-links-container>a:focus,
+.section-links-container>a:hover {
     color: #2C7CFF;
 }
 
@@ -103,13 +103,25 @@ ul {
 
 main{display: flex}
 
-.home{
+.home-section{
     display: none;
-    background: url("./assets/home-background.png") center center;
+    background: url("./assets/home-background.jpg") no-repeat center center;
+    background-size: cover;
     width: 100%;
     height: 100vh;
 }
 
-.home.active{
-    display: flex;
+.home-section.active{
+    display: grid;
+    grid-template-rows: 50% 30% 20%; 
+}
+
+.home-title{
+    width: 70%;
+    font-size: 5em;
+    color: #ffffff;
+    opacity: 0.53;
+    letter-spacing: 2px;
+    grid-row: 2/3;
+   justify-self: center;
 }
