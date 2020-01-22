@@ -23,7 +23,7 @@ function hamburgerIconColor() {
         hamburgerIconSvgPath1.setAttribute('stroke', '#FEFEFE');
         hamburgerIconSvgPath2.setAttribute('fill', '#FFFFFF');
     } else if(iconDisplayStyle === 'none') {
-        hamburgerIconSvgPath1.removeAttribute('stroke', '#272424');
+        hamburgerIconSvgPath1.setAttribute('stroke', '#272424');
         hamburgerIconSvgPath2.setAttribute('fill', '#000000');
     }
 }
