@@ -54,4 +54,4 @@ sectionLinksObj.forEach(element => {
             }
         })
     })
-})
+});

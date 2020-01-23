@@ -16,6 +16,7 @@ body {
 .no-link-style {
     text-decoration: none;
     -webkit-tap-highlight-color: none;
+    color: #000000;
 }
 
 .no-list-style {
@@ -72,6 +73,7 @@ nav.active {
     from {
         transform: translateX(100%)
     }
+
     to {
         transform: translateX(0%)
     }
@@ -109,7 +111,6 @@ ul {
 }
 
 .section-links-container>a {
-    color: #000000;
     font-size: 2em;
     padding-left: 10%;
 }
@@ -158,6 +159,101 @@ main {
     justify-self: center;
 }
 
+.portfolio-section {
+    display: none;
+}
+
+.portfolio-section.active {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15vh 8vh 5vh auto;
+}
+
+.porfolio-categories-container {
+    grid-area: 3/1/4/2;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 7% 0 7%;
+    font-family: 'Marvel', sans-serif;
+    font-size: 1.2em;
+}
+
+.portfolio-categories.active {
+    color: #2C7CFF;
+    text-decoration: underline;
+}
+
+.gallery {
+    grid-area: 4/1/5/2;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+    grid-auto-rows: 20vh;
+    justify-items: center;
+}
+
+.gallery>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.wider {
+    grid-column: span 2;
+}
+
+.taller {
+    grid-row: span 2;
+}
+
+.small {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.widest {
+    grid-column: span 3;
+}
+
+.container.container-active {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: grey;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 95%;
+    align-items: center;
+    justify-items: center;
+}
+
+#close-photo-bttn {
+    display: none;
+}
+
+#close-photo-bttn.active {
+    display: block;
+    z-index: 3;
+    grid-area: 1/1/2/2;
+}
+
+.item.img-active {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    grid-area: 2/1/3/2;
+}
+
 .about-section {
     display: none;
 }
@@ -169,7 +265,8 @@ main {
     grid-template-columns: 100%;
 }
 
-.about-title {
+.about-title,
+.portfolio-title {
     grid-area: 2/1/3/2;
     height: 60%;
     width: 50%;
@@ -241,14 +338,12 @@ main {
     grid-area: 3/1/4/2;
     font-family: 'Marvel', sans-serif;
     font-size: 1.4em;
-    color: #000000;
 }
 
 .contact-phone {
     grid-area: 4/1/5/2;
     font-family: 'Marvel', sans-serif;
     font-size: 1.4em;
-    color: #000000;
 }
 
 .contact-subtitle {
