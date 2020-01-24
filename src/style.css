@@ -192,7 +192,7 @@ main {
     display: grid;
     grid-gap: 8px;
     grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
-    grid-auto-rows: 20vh;
+    grid-auto-rows: 25vh;
     justify-items: center;
 }
 
@@ -200,7 +200,7 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 50%;
+    object-position: center top;
 }
 
 .wider {

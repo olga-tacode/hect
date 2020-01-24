@@ -33,7 +33,7 @@ const paintPhotos = (photo) => {
     /* openPhoto(); */
 }
 
-const openPhoto = () => {
+/* const openPhoto = () => {
     const imagesContainer = document.querySelectorAll('.container');
     const closePhotoBttn = document.getElementById('close-photo-bttn');
     imagesContainer.forEach(element => {
@@ -46,7 +46,7 @@ const openPhoto = () => {
             closeModal(element, event.target, closePhotoBttn);
         })
     });
-}
+} */
 
 const coloringLinksCategories = (arr, link) => {
     arr.forEach(element => {
