@@ -49,7 +49,3 @@ filmCategoriesLinks.forEach(category => {
     coloringVideoCategories(filmCategoriesLinks, event.target);
   });
 });
-
-/* window.onload = () => {
-  obtainDataJson("ad");
-}; */
