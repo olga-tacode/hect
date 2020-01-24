@@ -1,102 +1,119 @@
 [
     {
         "category":"branding",
+        "subcategory": "capufe",
         "num":1,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Branding/CAPUFE/MOI+TOMAR.png",
-        "class":"taller"
+        "class":"widest"
     },
     {
         "category":"branding",
+        "subcategory": "capufe",
         "num":2,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Branding/CAPUFE/Moi+Cinturon+5x2.5.jpeg",
         "class":"wider"
     },
     {
         "category":"branding",
+        "subcategory": "capufe",
         "num":3,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Branding/CAPUFE/Moi+limites+5x2.5.jpeg",
-        "class":"wider"
+        "class":"small"
     },
     {
         "category":"branding",
+        "subcategory": "publicaciones",
         "num":4,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Branding/Publicaciones/Apple/APPLE+01.png",
         "class":"wider"
     },
     {
         "category":"branding",
+        "subcategory": "publicaciones",
         "num":5,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Branding/Publicaciones/Apple/APPLE+04.png",
         "class":"small"
     },
     {
         "category":"branding",
+        "subcategory": "publicaciones",
         "num":6,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Branding/Publicaciones/Apple/APPLE+04.png",
         "class":"taller"  
     },
     {
         "category":"branding",
+        "subcategory": "publicaciones",
         "num":7,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Branding/Publicaciones/Apple/APPLE+05.png",
         "class":"wider"  
     },
     {
         "category":"branding",
+        "subcategory": "publicaciones",
         "num":8,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Branding/Publicaciones/Apple/APPLE+06.png",
         "class":"wider"  
     },
     {
         "category":"branding",
+        "subcategory": "publicaciones",
         "num":9,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Branding/Publicaciones/Aristegui/FRACKING+ARISTEGUI+02.png",
         "class":"wider"  
     },
     {
         "category":"branding",
+        "subcategory": "publicaciones",
         "num":10,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Branding/Publicaciones/Aristegui/FRACKING+ARISTEGUI.png",
         "class":"small"  
     },
     {
         "category":"branding",
+        "subcategory": "cocacola",
         "num":11,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Branding/cocas/CocaUSA.jpg",
         "class":"taller"  
     },
     {
         "category":"branding",
+        "subcategory": "cocacola",
         "num":12,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Branding/cocas/OCHOA+ROJA+02.jpg",
         "class":"wider"  
     },
     {
         "category":"branding",
+        "subcategory": "cocacola",
         "num":13,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Branding/cocas/PRODUCTSHOTOK.jpg",
         "class":"wider"  
     },
     {
         "category":"branding",
+        "subcategory": "kellogs",
         "num":14,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Branding/kellogs/KELLOGGS02.jpg",
         "class":"wider"  
     },
     {
         "category":"branding",
+        "subcategory": "kellogs",
         "num":15,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Branding/kellogs/KELLOGGS04.jpg",
         "class":"small"  
     },
     {
         "category":"branding",
+        "subcategory": "kellogs",
         "num":16,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Branding/kellogs/KELLOGGSBACK01.png",
         "class":"small"  
     },
     {
         "category":"branding",
+        "subcategory": "kellogs",
         "num":17,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Branding/kellogs/KELLOGGSBACK02.png",
         "class":"wider"  
@@ -105,13 +122,13 @@
         "category":"people",
         "num":1,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/People/ImagenesporShot/Artista/BOOK+(1).jpg",
-        "class":"taller"  
+        "class":"widest"  
     },
     {
         "category":"people",
         "num":2,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/People/ImagenesporShot/Artista/BOOK+2+(2).jpg",
-        "class":"wider"  
+        "class":"small"  
     },
     {
         "category":"people",
@@ -135,13 +152,13 @@
         "category":"people",
         "num":6,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/People/ImagenesporShot/Artista/MOI+OK+03.jpg",
-        "class":"taller"  
+        "class":"widest"  
     },
     {
         "category":"people",
         "num":7,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/People/ImagenesporShot/Artista/PEOPLE+1.jpg",
-        "class":"wider"  
+        "class":"small"  
     },
     {
         "category":"people",
@@ -165,7 +182,7 @@
         "category":"people",
         "num":11,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/People/ImagenesporShot/Artista/PEOPLE+20.jpg",
-        "class":"taller"  
+        "class":"widest"  
     },
     {
         "category":"people",
@@ -177,31 +194,31 @@
         "category":"people",
         "num":13,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/People/ImagenesporShot/Artista/PEOPLE+23.jpg",
-        "class":"wider"  
+        "class":"small"  
     },
     {
         "category":"people",
         "num":14,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/People/ImagenesporShot/Artista/PEOPLE+24.jpg",
-        "class":"wider"  
+        "class":"small"  
     },
     {
         "category":"people",
         "num":15,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/People/ImagenesporShot/Artista/PEOPLE+27.jpg",
-        "class":"small"  
+        "class":"wider"  
     },
     {
         "category":"people",
         "num":16,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/People/ImagenesporShot/Artista/PEOPLE+4.jpg",
-        "class":"taller"  
+        "class":"widest"  
     },
     {
         "category":"people",
         "num":17,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/People/ImagenesporShot/Artista/PEOPLE.jpg",
-        "class":"wider"  
+        "class":"small"  
     },
     {
         "category":"people",
@@ -225,13 +242,13 @@
         "category":"people",
         "num":21,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/People/ImagenesporShot/Portrait/PEOPLE+3+(1).jpg",
-        "class":"taller"  
+        "class":"widest"  
     },
     {
         "category":"people",
         "num":22,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/People/ImagenesporShot/Portrait/PEOPLE+3.jpg",
-        "class":"wider"  
+        "class":"small"  
     },
     {
         "category":"people",
@@ -255,13 +272,13 @@
         "category":"people",
         "num":26,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/People/ImagenesporShot/Portrait/PEOPLE+6+(1).jpg",
-        "class":"taller"  
+        "class":"widest"  
     },
     {
         "category":"people",
         "num":27,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/People/ImagenesporShot/Portrait/PEOPLE+7+(1).jpg",
-        "class":"wider"  
+        "class":"small"  
     },
     {
         "category":"people",
@@ -285,13 +302,13 @@
         "category":"people",
         "num":31,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/People/ImagenesporShot/ni%C3%B1os/PEOPLE+(3).jpg",
-        "class":"taller"  
+        "class":"widest"  
     },
     {
         "category":"people",
         "num":32,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/People/ImagenesporShot/ni%C3%B1os/PEOPLE+1+(1).jpg",
-        "class":"wider"  
+        "class":"small"  
     },
     {
         "category":"people",
@@ -309,37 +326,37 @@
         "category":"product",
         "num":2,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Product_Shot/Car/PONTIAC+LATERAL-1.jpg",
-        "class":"widest"  
+        "class":"wider"  
     },
     {
         "category":"product",
         "num":3,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Product_Shot/Car/Pontiacfront.jpg",
-        "class":"widest"  
+        "class":"small"  
     },
     {
         "category":"product",
         "num":4,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Product_Shot/Car/tablero.jpg",
-        "class":"widest"  
+        "class":"small"  
     },
     {
         "category":"product",
         "num":5,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Product_Shot/Carolans/BOOK+6.jpg",
-        "class":"widest"  
+        "class":"wider"  
     },
     {
         "category":"product",
         "num":6,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Product_Shot/Carolans/PRODUCTSHOT+4.jpg",
-        "class":"wider"  
+        "class":"widest"  
     },
     {
         "category":"product",
         "num":7,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Product_Shot/Cocas/BOOK+24.jpg",
-        "class":"small"  
+        "class":"wider"  
     },
     {
         "category":"product",
@@ -351,7 +368,7 @@
         "category":"product",
         "num":9,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Product_Shot/Cocas/BOOK+26.jpg",
-        "class":"wider"  
+        "class":"small"  
     },
     {
         "category":"product",
@@ -363,7 +380,7 @@
         "category":"product",
         "num":11,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Product_Shot/Cocas/COCA+ROJA+FC.jpg",
-        "class":"small"  
+        "class":"widest"  
     },
     {
         "category":"product",
@@ -393,7 +410,7 @@
         "category":"product",
         "num":16,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Product_Shot/food/PRODUCTSHOT+1.jpg",
-        "class":"small"  
+        "class":"widest"  
     },
     {
         "category":"product",
@@ -405,13 +422,13 @@
         "category":"product",
         "num":18,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Product_Shot/food/PRODUCTSHOT+3.jpg",
-        "class":"taller"  
+        "class":"small"  
     },
     {
         "category":"product",
         "num":19,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/Product_Shot/food/PRODUCTSHOTOK+1.jpg",
-        "class":"wider"  
+        "class":"small"  
     },
     {
         "category":"product",
@@ -519,25 +536,25 @@
         "category":"fashion",
         "num":17,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/fashion/Shot1_AnnTaylor/ANN+TAYLOR+12.jpg",
-        "class":"small"  
+        "class":"wider"  
     },
     {
         "category":"fashion",
         "num":18,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/fashion/Shot1_AnnTaylor/ANN+TAYLOR+13.jpg",
-        "class":"wider"  
+        "class":"small"  
     },
     {
         "category":"fashion",
         "num":19,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/fashion/Shot1_AnnTaylor/ANN+TAYLOR+2.jpg",
-        "class":"wider"  
+        "class":"small"  
     },
     {
         "category":"fashion",
         "num":20,
         "url":"https://d2awwwkqigoifh.cloudfront.net/Portafolio/fashion/Shot1_AnnTaylor/ANN+TAYLOR+4.jpg",
-        "class":"small"  
+        "class":"wider"  
     },
     {
         "category":"fashion",
