@@ -49,3 +49,9 @@ filmCategoriesLinks.forEach(category => {
     coloringVideoCategories(filmCategoriesLinks, event.target);
   });
 });
+
+const openData = () => {
+  obtainDataJson("ad");
+};
+
+document.getElementById("film-link").addEventListener("click", openData);
