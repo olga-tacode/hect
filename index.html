@@ -1,155 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Marvel&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Marvel&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/style.css" />
     <title>Héctor Macín</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="./src/assets/logo-hector.svg" alt="Logo Héctor">
-        <a class="no-link-style open-menu-icon" id="open-menu-icon" href="">
-            <svg width="47" height="47" viewBox="0 0 47 47" xmlns="http://www.w3.org/2000/svg">
-                <g fill="none" fill-rule="evenodd">
-                    <path id="hamburger-svg-path-1" stroke="#272424" stroke-width="3" d="M1.5 1.5h44v44h-44z" />
-                    <path id="hamburger-svg-path-2" fill="#000000"
-                        d="M7.581 10.613h32.597v3.79H7.581zM7.581 21.226h32.597v3.79H7.581zM7.581 31.839h32.597v3.79H7.581z" />
-                </g>
-            </svg>
-        </a>
-        <nav id="menu">
-            <ul>
-                <li class="no-list-style close-menu-link">
-                    <a class="no-link-style" id="close-menu-icon" href=""><img src="./src/assets/close-menu.svg"
-                            alt="Ícono para cerrar menú"></a>
-                </li>
-                <li class="no-list-style section-links-container">
-                    <a class="no-link-style section-links home" href="">HOME</a>
-                </li>
-                <li class="no-list-style section-links-container portfolio">
-                    <a class="no-link-style section-links portfolio" href="">PORTFOLIO</a>
-                </li>
-                <li class="no-list-style section-links-container ">
-                    <a class="no-link-style section-links film" href="">FILM & VIDEO</a>
-                </li>
-                <li class="no-list-style section-links-container">
-                    <a class="no-link-style section-links about" href="">ABOUT ME</a>
-                </li>
-                <li class="no-list-style section-links-container">
-                    <a class="no-link-style section-links contact" href="">CONTACT</a>
-                </li>
-                <li class="no-list-style social-media-links">
-                    <a href="https://www.facebook.com/hector.macin.18" target="_blank"><img
-                            src="./src/assets/logo-facebook.svg" alt="Logo de Facebook"></a>
-                    <a href="https://twitter.com/hectormacin" target="_blank"><img src="./src/assets/logo-twitter.svg"
-                            alt="Logo de Twitter"></a>
-                    <a href="https://www.linkedin.com/in/hector-macin-555a2254/?originalSubdomain=mx"
-                        target="_blank"><img src="./src/assets/logo-linkedin.svg" alt="Logo de LinkedIn"></a>
-                </li>
-            </ul>
-        </nav>
+      <img class="logo" src="./src/assets/logo-hector.svg" alt="Logo Héctor" />
+      <a class="no-link-style open-menu-icon" id="open-menu-icon" href="">
+        <svg
+          width="47"
+          height="47"
+          viewBox="0 0 47 47"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g fill="none" fill-rule="evenodd">
+            <path
+              id="hamburger-svg-path-1"
+              stroke="#272424"
+              stroke-width="3"
+              d="M1.5 1.5h44v44h-44z"
+            />
+            <path
+              id="hamburger-svg-path-2"
+              fill="#000000"
+              d="M7.581 10.613h32.597v3.79H7.581zM7.581 21.226h32.597v3.79H7.581zM7.581 31.839h32.597v3.79H7.581z"
+            />
+          </g>
+        </svg>
+      </a>
+      <nav id="menu">
+        <ul>
+          <li class="no-list-style close-menu-link">
+            <a class="no-link-style" id="close-menu-icon" href=""
+              ><img
+                src="./src/assets/close-menu.svg"
+                alt="Ícono para cerrar menú"
+            /></a>
+          </li>
+          <li class="no-list-style section-links-container">
+            <a class="no-link-style section-links home" href="">HOME</a>
+          </li>
+          <li class="no-list-style section-links-container portfolio">
+            <a class="no-link-style section-links portfolio" href=""
+              >PORTFOLIO</a
+            >
+          </li>
+          <li class="no-list-style section-links-container ">
+            <a class="no-link-style section-links film" id="film-link" href=""
+              >FILM & VIDEO</a
+            >
+          </li>
+          <li class="no-list-style section-links-container">
+            <a class="no-link-style section-links about" href="">ABOUT ME</a>
+          </li>
+          <li class="no-list-style section-links-container">
+            <a class="no-link-style section-links contact" href="">CONTACT</a>
+          </li>
+          <li class="no-list-style social-media-links">
+            <a href="https://www.facebook.com/hector.macin.18" target="_blank"
+              ><img src="./src/assets/logo-facebook.svg" alt="Logo de Facebook"
+            /></a>
+
+            <a href="https://twitter.com/hectormacin" target="_blank"
+              ><img src="./src/assets/logo-twitter.svg" alt="Logo de Twitter"
+            /></a>
+
+            <a
+              href="https://www.linkedin.com/in/hector-macin-555a2254/?originalSubdomain=mx"
+              target="_blank"
+              ><img src="./src/assets/logo-linkedin.svg" alt="Logo de LinkedIn"
+            /></a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <article class="pages home-section active" id="home">
-            <div class="mask"></div>
-            <img class="home-title" src="./src/assets/logo-completo-hector.svg" alt="Logo de Héctor Macín">
-            <a class="scroll-bttn" href=""><img src="./src/assets/scroll-bttn.svg"
-                    alt="Botón para hacer scroll hacia abajo"></a>
-            <p class="scroll-call">SCROLL</p>
-        </article>
-        <article class="pages portfolio-section" id="portfolio">
-            <h1 class="portfolio-title">PORTFOLIO</h1>
-            <div class="porfolio-categories-container">
-                <a class="portfolio-categories no-link-style active" id="fashion" href="">fashion</a>
-                <a class="portfolio-categories no-link-style" id="product" href="">product shot</a>
-                <a class="portfolio-categories no-link-style" id="branding" href="">branding</a>
-                <a class="portfolio-categories no-link-style" id="people" href="">people</a>
+      <article class="pages home-section active" id="home">
+        <div class="mask"></div>
+        <img
+          class="home-title"
+          src="./src/assets/logo-completo-hector.svg"
+          alt="Logo de Héctor Macín"
+        />
+        <a class="scroll-bttn" href=""
+          ><img
+            src="./src/assets/scroll-bttn.svg"
+            alt="Botón para hacer scroll hacia abajo"
+        /></a>
+
+        <p class="scroll-call">SCROLL</p>
+      </article>
+      <article class="pages portfolio-section" id="portfolio">
+        <h1 class="portfolio-title">PORTFOLIO</h1>
+        <div class="porfolio-categories-container">
+          <a
+            class="portfolio-categories no-link-style active"
+            id="fashion"
+            href=""
+            >fashion</a
+          >
+          <a class="portfolio-categories no-link-style" id="product" href=""
+            >product shot</a
+          >
+          <a class="portfolio-categories no-link-style" id="branding" href=""
+            >branding</a
+          >
+          <a class="portfolio-categories no-link-style" id="people" href=""
+            >people</a
+          >
+        </div>
+        <div class="gallery" id="gallery"></div>
+        <div class="modal">
+          <button id="close-modal">
+            <img
+              src="./src/assets/close-menu.svg"
+              alt="Botón para cerrar modal"
+            />
+          </button>
+          <div class="modal-imgs-container" id="modal-imgs-container">
+            <div class="carousel" style="max-width:800px"></div>
+            <div class="changing-bttns-container">
+              <button class="changing-bttns" id="prev">
+                <img
+                  src="./src/assets/prev-bttn.svg"
+                  alt="Botón para cambiar hacia atrás"
+                />
+              </button>
+
+              <button class="changing-bttns" id="next">
+                <img
+                  src="./src/assets/next-bttn.svg"
+                  alt="Botón para cambiar hacia adelante"
+                />
+              </button>
             </div>
-            <div class="gallery" id="gallery"></div>
-            <div class="modal">
-                <button id="close-modal"><img src="./src/assets/close-menu.svg" alt="Botón para cerrar modal"></button>
-                <div class="modal-imgs-container" id="modal-imgs-container">
-                    <div class="carousel" style="max-width:800px"></div>
-                    <div class="changing-bttns-container">
-                        <button class="changing-bttns" id="prev"><img src="./src/assets/prev-bttn.svg"
-                                alt="Botón para cambiar hacia atrás"></button>
-                        <button class="changing-bttns" id="next"><img src="./src/assets/next-bttn.svg"
-                                alt="Botón para cambiar hacia adelante"></button>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <article class="pages film-section" id="film">
-            <h1 class="film-title">FILM & VIDEO</h1>
-            <div class="film-categories-container">
-                <a class="film-categories no-link-style active" id="ad" href="">ad</a>
-                <a class="film-categories no-link-style" id="institutional" href="">institutional</a>
-                <a class="film-categories no-link-style" id="spot" href="">spot</a>
-            </div>
-            <div class="film" id="film-gallery"></div>
-        </article>
-        <article class="pages about-section" id="about">
-            <h1 class="about-title">ABOUT ME</h1>
-            <figure class="about-img">
-                <img src="./src/assets/retrato-hector.png" alt="Retrato de Héctor Macín">
-            </figure>
-            <div class="about-text-container">
-                <p>Born in Monterrey, Mexico, in 1969, his family moves to Mexico City in 1971, settling in Tlatelolco –
-                    where he spends his childhood and teenage years. The Tlatelolco movie theater and its matinees tinge
-                    for good his interest in storytelling, which later became a passion and a work. The influence of his
-                    elder sister, Elizabeth, who studied at the CUEC and specialized in scriptwriting, drove him to
-                    study photography and video at the Coyoacan Active Photography School, where he starts the
-                    professional phase of his passion; and where he learns to speak the language of image.</p>
-                <p>Héctor walks into a set for the first time as the director of photography for Miss Amnesia, a short
-                    film by the Iberoamericana University directed by Fernando Moreno, traveling later to Cuba and
-                    Chicago to attend scriptwriting and experimental cinema workshops.</p>
-                <p>Once he returns to Mexico, Héctor founds his own producing house and calls it Cinealquimia, which is
-                    born with the project of doing both fiction and documentary cinema and starts with the short film
-                    “Solo en Sueños” – which, with its narrative in 35mm cinema and still photo, clearly shows his other
-                    passion: Photography.</p>
-                <p>Héctor currently works as a free-lancer in films, documentaries, institutional cinema, as well as
-                    commercial TV for different production companies.</p>
-            </div>
-            <div class="about-contact-container">
-                <h2>CONTACT ME</h2>
-                <a href="https://www.facebook.com/hector.macin.18" target="_blank"><img
-                        src="./src/assets/logo-facebook.svg" alt="Logo de Facebook"></a>
-                <a href="https://twitter.com/hectormacin" target="_blank"><img src="./src/assets/logo-twitter.svg"
-                        alt="Logo de Twitter"></a>
-                <a href="https://www.linkedin.com/in/hector-macin-555a2254/?originalSubdomain=mx" target="_blank"><img
-                        src="./src/assets/logo-linkedin.svg" alt="Logo de LinkedIn"></a>
-            </div>
-        </article>
-        <article class="pages contact-section" id="contact">
-            <h1 class="contact-title">CONTACT</h1>
-            <a class="contact-email no-link-style" href="mailto:hector@contacto.com">E-mail: hector@contacto.com</a>
-            <a class="contact-phone no-link-style" href="tel:+5255123789">Cel: 55123789</a>
-            <h2 class="contact-subtitle">SOCIAL NETWORK</h2>
-            <div class="contact-social-media-container">
-                <a href="https://www.facebook.com/hector.macin.18" target="_blank"><img
-                        src="./src/assets/logo-facebook.svg" alt="Logo de Facebook"></a>
-                <a href="https://twitter.com/hectormacin" target="_blank"><img src="./src/assets/logo-twitter.svg"
-                        alt="Logo de Twitter"></a>
-                <a href="https://500px.com/hectormacin" target="_blank"><img src="./src/assets/logo-500px.svg"
-                        alt="Logo de 500 pixeles"></a>
-                <a href="https://www.linkedin.com/in/hector-macin-555a2254/?originalSubdomain=mx" target="_blank"><img
-                        src="./src/assets/logo-linkedin.svg" alt="Logo de LinkedIn"></a>
-                <a href="https://vimeo.com/hectormacin" target="_blank"><img src="./src/assets/logo-vimeo.svg"
-                        alt="Logo de Vimeo"></a>
-                <a href="https://www.imdb.com/name/nm1770676/" target="_blank"><img src="./src/assets/logo-imdb.svg"
-                        alt="Logo de IMDB"></a>
-            </div>
-        </article>
+          </div>
+        </div>
+      </article>
+      <article class="pages film-section" id="film">
+        <h1 class="film-title">FILM & VIDEO</h1>
+        <div class="film-categories-container">
+          <a class="film-categories no-link-style active" id="ad" href="">ad</a>
+          <a class="film-categories no-link-style" id="institutional" href=""
+            >institutional</a
+          >
+          <a class="film-categories no-link-style" id="spot" href="">spot</a>
+        </div>
+        <div class="film" id="film-gallery"></div>
+      </article>
+      <article class="pages about-section" id="about">
+        <h1 class="about-title">ABOUT ME</h1>
+        <figure class="about-img">
+          <img
+            src="./src/assets/retrato-hector.png"
+            alt="Retrato de Héctor Macín"
+          />
+        </figure>
+        <div class="about-text-container">
+          <p>
+            Born in Monterrey, Mexico, in 1969, his family moves to Mexico City
+            in 1971, settling in Tlatelolco – where he spends his childhood and
+            teenage years. The Tlatelolco movie theater and its matinees tinge
+            for good his interest in storytelling, which later became a passion
+            and a work. The influence of his elder sister, Elizabeth, who
+            studied at the CUEC and specialized in scriptwriting, drove him to
+            study photography and video at the Coyoacan Active Photography
+            School, where he starts the professional phase of his passion; and
+            where he learns to speak the language of image.
+          </p>
+          <p>
+            Héctor walks into a set for the first time as the director of
+            photography for Miss Amnesia, a short film by the Iberoamericana
+            University directed by Fernando Moreno, traveling later to Cuba and
+            Chicago to attend scriptwriting and experimental cinema workshops.
+          </p>
+          <p>
+            Once he returns to Mexico, Héctor founds his own producing house and
+            calls it Cinealquimia, which is born with the project of doing both
+            fiction and documentary cinema and starts with the short film “Solo
+            en Sueños” – which, with its narrative in 35mm cinema and still
+            photo, clearly shows his other passion: Photography.
+          </p>
+          <p>
+            Héctor currently works as a free-lancer in films, documentaries,
+            institutional cinema, as well as commercial TV for different
+            production companies.
+          </p>
+        </div>
+        <div class="about-contact-container">
+          <h2>CONTACT ME</h2>
+          <a href="https://www.facebook.com/hector.macin.18" target="_blank"
+            ><img src="./src/assets/logo-facebook.svg" alt="Logo de Facebook"
+          /></a>
+
+          <a href="https://twitter.com/hectormacin" target="_blank"
+            ><img src="./src/assets/logo-twitter.svg" alt="Logo de Twitter"
+          /></a>
+
+          <a
+            href="https://www.linkedin.com/in/hector-macin-555a2254/?originalSubdomain=mx"
+            target="_blank"
+            ><img src="./src/assets/logo-linkedin.svg" alt="Logo de LinkedIn"
+          /></a>
+        </div>
+      </article>
+      <article class="pages contact-section" id="contact">
+        <h1 class="contact-title">CONTACT</h1>
+        <a class="contact-email no-link-style" href="mailto:hector@contacto.com"
+          >E-mail: hector@contacto.com</a
+        >
+        <a class="contact-phone no-link-style" href="tel:+5255123789"
+          >Cel: 55123789</a
+        >
+        <h2 class="contact-subtitle">SOCIAL NETWORK</h2>
+        <div class="contact-social-media-container">
+          <a href="https://www.facebook.com/hector.macin.18" target="_blank"
+            ><img src="./src/assets/logo-facebook.svg" alt="Logo de Facebook"
+          /></a>
+
+          <a href="https://twitter.com/hectormacin" target="_blank"
+            ><img src="./src/assets/logo-twitter.svg" alt="Logo de Twitter"
+          /></a>
+
+          <a href="https://500px.com/hectormacin" target="_blank"
+            ><img src="./src/assets/logo-500px.svg" alt="Logo de 500 pixeles"
+          /></a>
+
+          <a
+            href="https://www.linkedin.com/in/hector-macin-555a2254/?originalSubdomain=mx"
+            target="_blank"
+            ><img src="./src/assets/logo-linkedin.svg" alt="Logo de LinkedIn"
+          /></a>
+
+          <a href="https://vimeo.com/hectormacin" target="_blank"
+            ><img src="./src/assets/logo-vimeo.svg" alt="Logo de Vimeo"
+          /></a>
+
+          <a href="https://www.imdb.com/name/nm1770676/" target="_blank"
+            ><img src="./src/assets/logo-imdb.svg" alt="Logo de IMDB"
+          /></a>
+        </div>
+      </article>
     </main>
     <script src="./src/js/index.js"></script>
     <script src="./src/js/gallery.js"></script>
     <script src="./src/js/videos.js"></script>
-</body>
-
+  </body>
 </html>

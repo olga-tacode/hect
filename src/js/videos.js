@@ -40,6 +40,8 @@ filmCategoriesLinks.forEach(category => {
   });
 });
 
-window.onload = () => {
+const openData = () => {
   obtainDataJson("ad");
 };
+
+document.getElementById("film-link").addEventListener("click", openData);
