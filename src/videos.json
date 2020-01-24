@@ -1,0 +1,57 @@
+[
+  {
+    "category": "ad",
+    "num": "1",
+    "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Ad/KIDS+MILK.mov"
+  },
+  {
+    "category": "ad",
+    "num": "2",
+    "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Ad/OD+ARCHIVA+2014+SELLO.mov"
+  },
+  {
+    "category": "ad",
+    "num": "3",
+    "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Ad/Vending+Carrito+01.mp4"
+  },
+  {
+    "category": "institutional",
+    "num": "1",
+    "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Ad/Vending+Carrito+01.mp4"
+  },
+  {
+    "category": "spot",
+    "num": "1",
+    "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Spot/American+Express+Benny+Ibarra.mov"
+  },
+  {
+    "category": "spot",
+    "num": "2",
+    "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Spot/American+Express+bianca+Marroquin.mov"
+  },
+  {
+    "category": "spot",
+    "num": "3",
+    "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Spot/ESSA+WEB+H.264.mov"
+  },
+  {
+    "category": "spot",
+    "num": "4",
+    "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Spot/Mazatlan.mov"
+  },
+  {
+    "category": "spot",
+    "num": "5",
+    "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Spot/Mexico+Produce.mov"
+  },
+  {
+    "category": "spot",
+    "num": "6",
+    "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Spot/PRONAFIM%2CSE.mov"
+  },
+  {
+    "category": "spot",
+    "num": "7",
+    "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Spot/Sayula+60seg+Director.mov"
+  }
+]
