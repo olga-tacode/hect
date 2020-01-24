@@ -33,20 +33,20 @@ const paintPhotos = photo => {
   /* openPhoto(); */
 };
 
-const openPhoto = () => {
-  const imagesContainer = document.querySelectorAll(".container");
-  const closePhotoBttn = document.getElementById("close-photo-bttn");
-  imagesContainer.forEach(element => {
-    element.addEventListener("click", event => {
-      event.preventDefault();
-      element.classList.add("container-active");
-      event.target.classList.add("img-active");
-      closePhotoBttn.classList.add("active");
-      console.log(element);
-      closeModal(element, event.target, closePhotoBttn);
+/* const openPhoto = () => {
+    const imagesContainer = document.querySelectorAll('.container');
+    const closePhotoBttn = document.getElementById('close-photo-bttn');
+    imagesContainer.forEach(element => {
+        element.addEventListener('click', (event) => {
+            event.preventDefault();
+            element.classList.add('container-active');
+            event.target.classList.add('img-active');
+            closePhotoBttn.classList.add('active');
+            console.log(element)
+            closeModal(element, event.target, closePhotoBttn);
+        })
     });
-  });
-};
+} */
 
 const coloringLinksCategories = (arr, link) => {
   arr.forEach(element => {
