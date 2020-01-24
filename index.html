@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Marvel&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Marvel&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/style.css" />
     <title>Héctor Macín</title>
 </head>
 
@@ -77,13 +77,23 @@
                 <div class="modal-imgs-container" id="modal-imgs-container">
                     <div class="carousel" style="max-width:800px"></div>
                     <div class="changing-bttns-container">
-                        <button class="changing-bttns" id="prev"><img src="./src/assets/prev-bttn.svg" alt="Botón para cambiar hacia atrás"></button>
-                        <button class="changing-bttns" id="next"><img src="./src/assets/next-bttn.svg" alt="Botón para cambiar hacia adelante"></button>
+                        <button class="changing-bttns" id="prev"><img src="./src/assets/prev-bttn.svg"
+                                alt="Botón para cambiar hacia atrás"></button>
+                        <button class="changing-bttns" id="next"><img src="./src/assets/next-bttn.svg"
+                                alt="Botón para cambiar hacia adelante"></button>
                     </div>
                 </div>
             </div>
         </article>
-        <article class="pages" id="film"></article>
+        <article class="pages film-section" id="film">
+            <h1 class="film-title">FILM & VIDEO</h1>
+            <div class="film-categories-container">
+                <a class="film-categories no-link-style active" id="ad" href="">ad</a>
+                <a class="film-categories no-link-style" id="institutional" href="">institutional</a>
+                <a class="film-categories no-link-style" id="spot" href="">spot</a>
+            </div>
+            <div class="film" id="film-gallery"></div>
+        </article>
         <article class="pages about-section" id="about">
             <h1 class="about-title">ABOUT ME</h1>
             <figure class="about-img">
@@ -139,6 +149,7 @@
     </main>
     <script src="./src/js/index.js"></script>
     <script src="./src/js/gallery.js"></script>
+    <script src="./src/js/videos.js"></script>
 </body>
 
 </html>
