@@ -33,13 +33,23 @@ const paintVideos = videos => {
   filmGallery.insertAdjacentHTML("beforeend", paintHTML);
 };
 
+const coloringVideoCategories = (arr, link) => {
+  arr.forEach(element => {
+      if (element.classList.contains('active')) {
+          element.classList.remove('active');
+      }
+  });
+  link.classList.add('active');
+};
+
 filmCategoriesLinks.forEach(category => {
   category.addEventListener("click", event => {
     event.preventDefault();
     obtainDataJson(event.target.id);
+    coloringVideoCategories(filmCategoriesLinks, event.target);
   });
 });
 
-window.onload = () => {
+/* window.onload = () => {
   obtainDataJson("ad");
-};
+}; */

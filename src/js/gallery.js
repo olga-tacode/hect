@@ -5,6 +5,7 @@ const carousel = document.querySelector('.carousel');
 const closeModalBttn = document.getElementById('close-modal');
 let slideIndex = 1;
 const changingBttns = document.querySelectorAll('.changing-bttns');
+const portfolioLink = document.getElementById('portfolio-link');
 
 function obtainingJsonData(id) {
     fetch('./src/photos.json')
@@ -146,6 +147,6 @@ photoCategoriesLinks.forEach(category => {
     });
 });
 
-window.onload = () => {
+portfolioLink.addEventListener('click', ()=>{
     obtainingJsonData('fashion');
-};
+});
