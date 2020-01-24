@@ -1,0 +1,45 @@
+const filmGallery = document.getElementById("film-gallery");
+const filmCategoriesLinks = document.querySelectorAll(".film-categories");
+
+function obtainDataJson(id) {
+  fetch("./src/videos.json")
+    .then(response => {
+      return response.json();
+    })
+    .then(filmCollection => {
+      filterFilms(filmCollection, id);
+    });
+}
+
+const filterFilms = (films, id) => {
+  const filmResult = films.filter(videos => videos.category === id);
+  renderFilterFilms(filmResult);
+};
+
+const renderFilterFilms = obj => {
+  filmGallery.innerHTML = "";
+  obj.forEach(element => {
+    paintVideos(element);
+  });
+};
+
+const paintVideos = videos => {
+  let paintHTML = `
+    <div class="container ${videos.class}">
+    <video width="100%" height="270" controls>
+    <source src="${videos.url}"
+    type="video/mp4" /></video>
+    </div>`;
+  filmGallery.insertAdjacentHTML("beforeend", paintHTML);
+};
+
+filmCategoriesLinks.forEach(category => {
+  category.addEventListener("click", event => {
+    event.preventDefault();
+    obtainDataJson(event.target.id);
+  });
+});
+
+window.onload = () => {
+  obtainDataJson("ad");
+};
