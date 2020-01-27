@@ -40,7 +40,7 @@ const loopingFilteredArr = arr => {
 const paintPhotos = photo => {
     let dataToHTML = `
     <div class="container ${photo.class} ${photo.category}" id="${photo.num}">
-        <button id="close-photo-bttn">X</button>
+        <button class="close-photo-bttn button-style"><img src="./src/assets/close-menu.svg" alt="Botón para cerrar modal" /></button>
         <img class="item" src="${photo.url}"/>
     </div>`;
     gallery.insertAdjacentHTML('beforeend', dataToHTML);
@@ -51,12 +51,44 @@ const openPhoto = () => {
     arr.forEach(element => {
         element.addEventListener('click', (event) => {
             event.preventDefault();
-            element.classList.add('active');
-            event.target.classList.add('active');
-        })
-    })
+            const container = element;
+            const img = element.lastElementChild;
+            const closingBttn = element.firstElementChild;
+            closingBttn.classList.add('active');
+            container.classList.add('active');
+            img.classList.add('active');
+            /* closePhoto(arr); */
+        });
+    });
 }
 
+/* const closePhoto = (arr) => {
+    const bttnArr = document.querySelectorAll('.close-photo-bttn');
+    const photosArr = document.querySelectorAll('.item');
+    bttnArr.forEach(element => {
+        element.addEventListener('click', (event) => {
+            event.preventDefault();
+            element.style.display = 'none';
+            const containerArr = Array.from(arr);
+            let filteredArr =containerArr.filter(element => element.classList.contains('active'));
+            filteredArr[0].classList.add('innactive');
+            photosArr.forEach(element => {
+                if(element.classList.contains('active')){
+                    element.classList.add('innactive');
+                }
+            })
+        })
+    })
+} */
+
+/* const searchingForActiveContainer = (arr) =>{
+    arr.forEach(element => {
+        if(element.classList.contains('active')){
+            element.classList.toggle('active');
+        }
+    });
+};
+ */
 /* --------------------------- For branding section -------------------------------- */
 
 const handleBranding = arr => {
