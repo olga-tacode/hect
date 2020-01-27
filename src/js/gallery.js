@@ -34,7 +34,7 @@ const loopingFilteredArr = arr => {
     arr.forEach(element => {
         paintPhotos(element);
     });
-    openPhoto();
+    openPhoto(arr);
 };
 
 const paintPhotos = photo => {
@@ -46,49 +46,16 @@ const paintPhotos = photo => {
     gallery.insertAdjacentHTML('beforeend', dataToHTML);
 };
 
-const openPhoto = () => {
+const openPhoto = (photosArr) => {
     let arr = document.querySelectorAll('.container');
     arr.forEach(element => {
         element.addEventListener('click', (event) => {
             event.preventDefault();
-            const container = element;
-            const img = element.lastElementChild;
-            const closingBttn = element.firstElementChild;
-            closingBttn.classList.add('active');
-            container.classList.add('active');
-            img.classList.add('active');
-            /* closePhoto(arr); */
+            paintBrandingPhotos(photosArr);
         });
     });
 }
 
-/* const closePhoto = (arr) => {
-    const bttnArr = document.querySelectorAll('.close-photo-bttn');
-    const photosArr = document.querySelectorAll('.item');
-    bttnArr.forEach(element => {
-        element.addEventListener('click', (event) => {
-            event.preventDefault();
-            element.style.display = 'none';
-            const containerArr = Array.from(arr);
-            let filteredArr =containerArr.filter(element => element.classList.contains('active'));
-            filteredArr[0].classList.add('innactive');
-            photosArr.forEach(element => {
-                if(element.classList.contains('active')){
-                    element.classList.add('innactive');
-                }
-            })
-        })
-    })
-} */
-
-/* const searchingForActiveContainer = (arr) =>{
-    arr.forEach(element => {
-        if(element.classList.contains('active')){
-            element.classList.toggle('active');
-        }
-    });
-};
- */
 /* --------------------------- For branding section -------------------------------- */
 
 const handleBranding = arr => {
@@ -124,7 +91,7 @@ const paintBrandingPhotos = arr => {
     modal.classList.add('active');
     arr.forEach(element => {
         let dataToCarousel = `
-        <img class = "mySlides" src="${element.url}" style="width:100%; object-fit: cover;"/>`
+        <img class="mySlides" src="${element.url}" style="width:100%; height: 100%; object-fit: contain;"/>`
         carousel.insertAdjacentHTML('beforeend', dataToCarousel);
     });
     showDivs(slideIndex);
