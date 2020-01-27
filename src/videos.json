@@ -9,7 +9,7 @@
     "category": "ad",
     "num": "2",
     "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Ad/OD+ARCHIVA+2014+SELLO.mov",
-    "poster": ""
+    "poster": "https://video-hect2020.s3-us-west-2.amazonaws.com/video/Institutional/OD.jpg"
   },
   {
     "category": "ad",
@@ -20,7 +20,7 @@
   {
     "category": "institutional",
     "num": "1",
-    "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Institutional/01+DDR+MIXCCFINAL.mp4",
+    "url": "https://video-hect2020.s3-us-west-2.amazonaws.com/video/Institutional/01+DDR+MIXCCFINAL.mp4",
     "poster": "https://video-hect2020.s3-us-west-2.amazonaws.com/video/Institutional/DDR.jpg"
   },
   {
