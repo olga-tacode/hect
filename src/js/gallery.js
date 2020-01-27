@@ -34,17 +34,28 @@ const loopingFilteredArr = arr => {
     arr.forEach(element => {
         paintPhotos(element);
     });
+    openPhoto();
 };
 
 const paintPhotos = photo => {
     let dataToHTML = `
-    <div class="container ${photo.class}">
+    <div class="container ${photo.class} ${photo.category}" id="${photo.num}">
         <button id="close-photo-bttn">X</button>
         <img class="item" src="${photo.url}"/>
     </div>`;
     gallery.insertAdjacentHTML('beforeend', dataToHTML);
-    /* openPhoto(); */
 };
+
+const openPhoto = () => {
+    let arr = document.querySelectorAll('.container');
+    arr.forEach(element => {
+        element.addEventListener('click', (event) => {
+            event.preventDefault();
+            element.classList.add('active');
+            event.target.classList.add('active');
+        })
+    })
+}
 
 /* --------------------------- For branding section -------------------------------- */
 
@@ -148,10 +159,10 @@ photoCategoriesLinks.forEach(category => {
     });
 });
 
-portfolioLink.addEventListener('click', ()=>{
+portfolioLink.addEventListener('click', () => {
     obtainingJsonData('fashion');
 });
 
-scrollButton.addEventListener('click', ()=>{
+scrollButton.addEventListener('click', () => {
     obtainingJsonData('fashion');
 });
