@@ -63,4 +63,4 @@ scrollBttn.addEventListener('click', (event) => {
     homeSection.classList.remove('active');
     portfolioSection.classList.add('active');
     hamburgerIconColor();
-})
+});
