@@ -14,6 +14,7 @@ const menu = document.getElementById('menu');
 /* ----------------- Home elements ---------------------- */
 
 const homeSection = document.getElementById('home');
+const scrollBttn = document.getElementById('scroll-bttn');
 
 /* ----------------- Functions ---------------------- */
 
@@ -55,3 +56,11 @@ sectionLinksObj.forEach(element => {
         })
     })
 });
+
+scrollBttn.addEventListener('click', (event) => {
+    event.preventDefault();
+    const portfolioSection = document.getElementById('portfolio');
+    homeSection.classList.remove('active');
+    portfolioSection.classList.add('active');
+    hamburgerIconColor();
+})

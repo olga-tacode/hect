@@ -6,6 +6,7 @@ const closeModalBttn = document.getElementById('close-modal');
 let slideIndex = 1;
 const changingBttns = document.querySelectorAll('.changing-bttns');
 const portfolioLink = document.getElementById('portfolio-link');
+const scrollButton = document.getElementById('scroll-bttn');
 
 function obtainingJsonData(id) {
     fetch('./src/photos.json')
@@ -148,5 +149,9 @@ photoCategoriesLinks.forEach(category => {
 });
 
 portfolioLink.addEventListener('click', ()=>{
+    obtainingJsonData('fashion');
+});
+
+scrollButton.addEventListener('click', ()=>{
     obtainingJsonData('fashion');
 });
