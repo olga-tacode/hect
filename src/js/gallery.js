@@ -4,7 +4,6 @@ const modal = document.querySelector('.modal');
 const carousel = document.querySelector('.carousel');
 const closeModalBttn = document.getElementById('close-modal');
 let slideIndex = 1;
-const changingBttns = document.querySelectorAll('.changing-bttns');
 const portfolioLink = document.getElementById('portfolio-link');
 const scrollButton = document.getElementById('scroll-bttn');
 
@@ -94,7 +93,7 @@ const paintBrandingPhotos = arr => {
         <img class="mySlides" src="${element.url}" style="width:100%; height: 100%; object-fit: contain;"/>`
         carousel.insertAdjacentHTML('beforeend', dataToCarousel);
     });
-    showDivs(slideIndex);
+    showDivs(slideIndex = 1);
     changeImg();
     closeModal();
 };
@@ -112,7 +111,7 @@ function plusDivs(n) {
 
 function showDivs(n) {
     let i;
-    const x = document.getElementsByClassName("mySlides");
+    const x = document.getElementsByClassName('mySlides');
     if (n > x.length) {
         slideIndex = 1
     }
@@ -120,21 +119,21 @@ function showDivs(n) {
         slideIndex = x.length
     }
     for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+        x[i].style.display = 'none';
     }
-    x[slideIndex - 1].style.display = "block";
+    x[slideIndex - 1].style.display = 'block';
 }
 
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+
 const changeImg = () => {
-    changingBttns.forEach(bttn => {
-        bttn.addEventListener('click', (event) => {
-            if (event.target.id === 'prev') {
-                plusDivs(-1);
-            } else {
-                plusDivs(1);
-            }
-        })
-    })
+    prevBtn.addEventListener('click', () => {
+        plusDivs(-1)
+    });
+    nextBtn.addEventListener('click', () => {
+        plusDivs(1)
+    });
 };
 
 /* --------------------------- Function that changes link color when is activated -------------------------------- */

@@ -25,8 +25,8 @@ const renderFilterFilms = obj => {
 
 const paintVideos = videos => {
   let paintHTML = `
-    <div class="container ${videos.class}">
-    <video width="100%" height="270" controls poster="${videos.poster}">
+    <div class="video-container">
+    <video width="100%" height="100%" controls poster="${videos.poster}">
     <source src="${videos.url}"
     type="video/mp4" /></video>
     </div>`;
