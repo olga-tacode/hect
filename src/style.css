@@ -559,3 +559,7 @@ footer {
     font-family: "Marvel", sans-serif;
     font-size: 1.5em;
 }
+
+@media screen and (min-width: 1024px){
+    
+}
