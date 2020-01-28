@@ -32,7 +32,7 @@ header {
     grid-template-columns: 30% 70%;
     grid-template-rows: 100%;
     z-index: 3;
-    background: #FFFFFF;
+    background: #ffffff;
 }
 
 .open-menu-icon {
@@ -256,7 +256,7 @@ main {
 
 .branding {
     font-size: 2em;
-    color: #FFFFFF;
+    color: #ffffff;
     letter-spacing: 0.59px;
     display: grid;
     align-items: center;
@@ -266,7 +266,7 @@ main {
 }
 
 .blueB {
-    background: #2C7CFF;
+    background: #2c7cff;
 }
 
 .blackB {
@@ -297,7 +297,7 @@ main {
     bottom: 0;
     right: 0;
     left: 0;
-    background: #D9E6FA;
+    background: #d9e6fa;
     z-index: 3;
     overflow-y: scroll;
     opacity: 0.96;
@@ -467,7 +467,7 @@ main {
     margin-bottom: 20px;
 }
 
-.video-container{
+.video-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -541,12 +541,12 @@ footer {
     display: grid;
     grid-template-rows: repeat(2, 50%);
     grid-template-columns: 100%;
-    background: #2C7CFF;
+    background: #2c7cff;
     align-items: center;
     justify-items: center;
 }
 
-.footer-socialmedia-container{
+.footer-socialmedia-container {
     display: flex;
     flex-flow: row nowrap;
     width: 30%;
@@ -555,35 +555,35 @@ footer {
     justify-content: space-around;
 }
 
-.footer-header{
+.footer-header {
     color: #ffffff;
     text-align: center;
     font-family: "Marvel", sans-serif;
     font-size: 1.5em;
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
     header {
         height: 15vh;
         grid-template-columns: 15% 85%;
         grid-template-rows: 100%;
     }
-    
+
     .open-menu-icon {
         display: none;
     }
 
-    .close-menu-link{
+    .close-menu-link {
         display: none;
     }
-    
+
     .logo {
         grid-area: 1/1/2/2;
         margin: 0;
         align-self: center;
         justify-self: center;
     }
-    
+
     nav {
         width: 100%;
         height: 100%;
@@ -599,24 +599,24 @@ footer {
         justify-content: space-around;
         align-items: center;
     }
-    
-    .section-links-container>a{
+
+    .section-links-container>a {
         font-size: 1.5em;
         padding: 0;
     }
-    
+
     .section-links-container>a:hover,
     .section-links-container>a:focus {
         color: #2c7cff;
         text-decoration: underline;
     }
-    
+
     .social-media-links {
         width: 20%;
         padding-left: 0;
         justify-content: space-around;
     }
-    
+
     .social-media-links>a {
         margin: 0;
     }
