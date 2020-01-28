@@ -117,11 +117,6 @@ ul {
     padding-left: 10%;
 }
 
-.section-links-container>a:focus,
-.section-links-container>a:hover {
-    color: #2c7cff;
-}
-
 .social-media-links {
     width: 100%;
     padding-left: 10%;
@@ -605,8 +600,7 @@ footer {
         align-items: center;
     }
     
-    .section-links-container>a {
-        color: #FFFFFF;
+    .section-links-container>a{
         font-size: 1.5em;
         padding: 0;
     }

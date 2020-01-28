@@ -15,6 +15,8 @@ const logoFilling = document.getElementById('logo-filling');
 const logoStroke = document.getElementById('logo-stroke');
 const iconPathOne = document.querySelectorAll('.icon-path-one');
 const iconPathTwo = document.querySelectorAll('.icon-path-two');
+const sectionLinksContainer = document.querySelectorAll('.section-links-container a');
+const logo = document.getElementById('logo');
 
 /* ----------------- Home elements ---------------------- */
 
@@ -40,9 +42,9 @@ function hamburgerIconColor() {
 hamburgerIconColor();
 
 let w =
-  document.documentElement.clientWidth ||
-  document.body.clientWidth ||
-  window.innerWidth;
+    document.documentElement.clientWidth ||
+    document.body.clientWidth ||
+    window.innerWidth;
 
 window.addEventListener(
     "resize",
@@ -51,52 +53,71 @@ window.addEventListener(
             document.documentElement.clientWidth ||
             document.body.clientWidth ||
             window.innerWidth;
-        displayingFooter(w);
+        listeningScreenWidth(w);
     },
     false
 );
 
-function displayingFooter(w) {
-    if (homeSection.classList.contains('active')) {
-        header.style.background = 'transparent';
-        footer.style.display = 'none';
-        if (w <= 1024) {
-            logoFilling.setAttribute('fill', '');
-            logoStroke.setAttribute('stroke', '');
-            changeIconPathColorOthers(iconPathOne, iconPathTwo);
+function listeningScreenWidth(w) {
+    if (w <= 1024) {
+        if (homeSection.classList.contains('active')) {
+            isHomeActiveMobile();
         } else {
-            logoFilling.setAttribute('fill', '#ffffff');
-            logoStroke.setAttribute('stroke', '#ffffff');
-            changeIconPathColorHome(iconPathOne, iconPathTwo);
+            isntHomeActive();
         }
     } else {
-        header.style.background = '#ffffff';
-        footer.style.display = 'grid';
-        logoFilling.setAttribute('fill', '#000000');
-        logoStroke.setAttribute('stroke', '#000000');
-        changeIconPathColorOthers(iconPathOne, iconPathTwo);
+        if (homeSection.classList.contains('active')) {
+            isHomeActiveDesktop();
+        } else {
+            isntHomeActive();
+        }
     }
-}
+};
 
-displayingFooter();
+listeningScreenWidth(w);
 
-function changeIconPathColorHome(arrOne, arrTwo) {
-    arrOne.forEach(element => {
-        element.setAttribute('fill', '#ffffff');
-    });
-    arrTwo.forEach(element => {
-        element.setAttribute('fill', '#000000');
+function isHomeActiveMobile() {
+    header.style.background = 'transparent';
+    footer.style.display = 'none';
+    logoFilling.setAttribute('fill', '');
+    logoStroke.setAttribute('stroke', '');
+    changeIconPathColor(iconPathOne, '#000000');
+    changeIconPathColor(iconPathTwo, '#ffffff');
+    changeMenuLinksColor('#000000', sectionLinksContainer);
+};
+
+function isHomeActiveDesktop() {
+    header.style.background = 'transparent';
+    footer.style.display = 'none';
+    logoFilling.setAttribute('fill', '#ffffff');
+    logoStroke.setAttribute('stroke', '#ffffff');
+    changeIconPathColor(iconPathOne, '#ffffff');
+    changeIconPathColor(iconPathTwo, '#000000');
+    changeMenuLinksColor('#ffffff', sectionLinksContainer);
+};
+
+function isntHomeActive() {
+    header.style.background = '#ffffff';
+    footer.style.display = 'grid';
+    logoFilling.setAttribute('fill', '#000000');
+    logoStroke.setAttribute('stroke', '#000000');
+    changeIconPathColor(iconPathOne, '#000000');
+    changeIconPathColor(iconPathTwo, '#ffffff');
+    changeMenuLinksColor('#000000', sectionLinksContainer);
+};
+
+function changeIconPathColor(arr, color) {
+    arr.forEach(element => {
+        element.setAttribute('fill', `${color}`);
     });
 };
 
-function changeIconPathColorOthers(arrOne, arrTwo) {
-    arrOne.forEach(element => {
-        element.setAttribute('fill', '#000000');
-    });
-    arrTwo.forEach(element => {
-        element.setAttribute('fill', '#ffffff');
+function changeMenuLinksColor(color, arr) {
+    arr.forEach(element => {
+        element.style.color = `${color}`;
     });
 };
+
 /* ----------------- DOM events ---------------------- */
 
 openMenuIcon.addEventListener('click', (event) => {
@@ -115,7 +136,7 @@ sectionLinksObj.forEach(element => {
         menu.classList.remove('active');
         appPages.forEach(page => {
             hamburgerIconColor();
-            displayingFooter();
+            listeningScreenWidth(w);
             if (event.target.classList.contains(page.id)) {
                 page.classList.add('active');
             } else {
@@ -131,4 +152,18 @@ scrollBttn.addEventListener('click', (event) => {
     homeSection.classList.remove('active');
     portfolioSection.classList.add('active');
     hamburgerIconColor();
+    listeningScreenWidth(w);
+});
+
+logo.addEventListener('click', (event) => {
+    event.preventDefault();
+    appPages.forEach(page => {
+        if (page.id === 'home') {
+            page.classList.add('active');
+            hamburgerIconColor();
+            listeningScreenWidth(w);
+        } else {
+            page.classList.remove('active');
+        }
+    });
 });
