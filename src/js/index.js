@@ -16,6 +16,10 @@ const menu = document.getElementById('menu');
 const homeSection = document.getElementById('home');
 const scrollBttn = document.getElementById('scroll-bttn');
 
+/* ----------------- Footer elements ---------------------- */
+
+const footer = document.querySelector('footer');
+
 /* ----------------- Functions ---------------------- */
 
 function hamburgerIconColor() {
@@ -29,6 +33,16 @@ function hamburgerIconColor() {
     }
 }
 hamburgerIconColor();
+
+function displayingFooter () {
+    if (homeSection.classList.contains('active')){
+        footer.style.display = 'none';
+    } else {
+        footer.style.display = 'grid';
+    }
+}
+
+displayingFooter();
 
 /* ----------------- DOM events ---------------------- */
 
@@ -48,6 +62,7 @@ sectionLinksObj.forEach(element => {
         menu.classList.remove('active');
         appPages.forEach(page => {
             hamburgerIconColor();
+            displayingFooter();
             if (event.target.classList.contains(page.id)) {
                 page.classList.add('active');
             } else {
@@ -64,3 +79,4 @@ scrollBttn.addEventListener('click', (event) => {
     portfolioSection.classList.add('active');
     hamburgerIconColor();
 });
+
