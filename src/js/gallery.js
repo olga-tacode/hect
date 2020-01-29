@@ -60,10 +60,10 @@ const openPhoto = (photosArr) => {
 const handleBranding = arr => {
     gallery.innerHTML = '';
     const brandingCategories = `
-    <div class="widest branding blueB" id="publicaciones">Publicaciones</div>
+    <div class="widest branding blueB" id="publicaciones">Publications</div>
     <div class="taller branding blackB" id="cocacola">Coca-Cola</div>
     <div class="small branding blueB" id="capufe">CAPUFE</div>
-    <div class="small branding blueB" id="kellogs">Kellog's</div>
+    <div class="small branding blueB" id="kellogs">Kellogg's</div>
     `
     gallery.insertAdjacentHTML('beforeend', brandingCategories);
     const brandingCategoriesArr = document.querySelectorAll('.branding');

@@ -169,6 +169,10 @@ main {
     background: url("./assets/logo-home-mobile.svg") no-repeat center center;
 }
 
+#home-title-svg {
+    display: none;
+}
+
 .scroll-bttn {
     width: 15%;
     height: 50%;
@@ -299,7 +303,6 @@ main {
     left: 0;
     background: #d9e6fa;
     z-index: 3;
-    overflow-y: scroll;
     opacity: 0.96;
 }
 
@@ -363,6 +366,57 @@ main {
     object-fit: cover;
 }
 
+.film-section {
+    display: none;
+}
+
+.film-section.active {
+    width: 100%;
+    height: auto;
+    min-height: 85vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15vh 8vh 5vh auto;
+}
+
+.film-title {
+    grid-area: 2/1/3/2;
+    height: 60%;
+    width: 80%;
+    font-size: 2em;
+    padding-left: 10%;
+    align-self: center;
+    letter-spacing: 0.63px;
+}
+
+.film-categories-container {
+    grid-area: 3/1/4/2;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10% 0 10%;
+    font-family: "Marvel", sans-serif;
+    font-size: 1.2em;
+    width: 50%;
+}
+
+#film-gallery {
+    grid-area: 4/1/5/2;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-auto-rows: auto;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
 .about-section {
     display: none;
 }
@@ -421,57 +475,6 @@ main {
 .about-contact-container>h2 {
     grid-area: 1/ 1 / 2 / span 3;
     font-size: 1em;
-}
-
-.film-section {
-    display: none;
-}
-
-.film-section.active {
-    width: 100%;
-    height: auto;
-    min-height: 85vh;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 15vh 8vh 5vh auto;
-}
-
-.film-title {
-    grid-area: 2/1/3/2;
-    height: 60%;
-    width: 80%;
-    font-size: 2em;
-    padding-left: 10%;
-    align-self: center;
-    letter-spacing: 0.63px;
-}
-
-.film-categories-container {
-    grid-area: 3/1/4/2;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 10% 0 10%;
-    font-family: "Marvel", sans-serif;
-    font-size: 1.2em;
-    width: 50%;
-}
-
-#film-gallery {
-    grid-area: 4/1/5/2;
-    margin: 0;
-    width: 100%;
-    display: grid;
-    grid-auto-rows: auto;
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.video-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0 20px 0;
 }
 
 .contact-section {
@@ -620,4 +623,127 @@ footer {
     .social-media-links>a {
         margin: 0;
     }
+
+    .home-section {
+        background: #030605 url("./assets/home-background.jpg") no-repeat right bottom;
+        background-size: 50%;
+    }
+
+    .home-section.active {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .mask {
+        display: none;
+    }
+
+    .home-title {
+        width: 50%;
+        height: 50%;
+        grid-area: 1/1/3/2;
+        background: none;
+        padding-top: 15%;
+    }
+
+    #home-title-svg {
+        display: block;
+    }
+
+    .scroll-bttn {
+        grid-area: 3/1/4/3;
+    }
+
+    .scroll-bttn>img {
+        height: 100%;
+        opacity: 0.5;
+    }
+
+    .scroll-call {
+        grid-area: 4/1/5/3;
+        opacity: 0.5;
+    }
+
+    .portfolio-section.active {
+        grid-template-rows: 15vh 0vh 10vh auto;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-title {
+        display: none;
+    }
+
+    .porfolio-categories-container,
+    .film-categories-container {
+        grid-area: 3/1/4/2;
+        width: 40%;
+        margin: 0 0 0 8%;
+        font-size: 1.8em;
+    }
+
+    .portfolio-categories.active,
+    .film-categories.active {
+        color: #a4c7f4;
+        text-decoration: underline;
+    }
+
+    .gallery {
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+        grid-auto-rows: 35vh;
+    }
+
+    .wider {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .taller {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .small {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .widest {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .branding {
+        font-size: 4em;
+    }
+
+    .film-section {
+        display: none;
+    }
+
+    .film-section.active {
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 15vh 0vh 10vh auto;
+    }
+
+    .film-title {
+        display: none;
+    }
+
+    
+    #film-cat {
+        grid-area: 3/1/4/4;
+        width: 30%;
+    }
+
+    #film-gallery {
+        grid-area: 4/2/5/3;
+    }
+
+    .video-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
 }
