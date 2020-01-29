@@ -585,6 +585,7 @@ footer {
         margin: 0;
         align-self: center;
         justify-self: center;
+        cursor: pointer;
     }
 
     nav {
@@ -609,7 +610,8 @@ footer {
     }
 
     .section-links-container>a:hover,
-    .section-links-container>a:focus {
+    .contact-email:hover,
+    .contact-phone:hover {
         color: #2c7cff;
         text-decoration: underline;
     }
@@ -780,5 +782,44 @@ footer {
     
     .about-contact-container>h2 {
         font-size: 1.3em;
+    }
+
+    .contact-section.active {
+        height: 80vh;
+        grid-template-rows: 15vh 15vh 5vh 5vh 10vh 20vh 30vh;
+        justify-items: center;
+        align-items: flex-end;
+    }
+    
+    .contact-title {
+        font-size: 3em;
+        letter-spacing: 0.7px;
+    }
+    
+    .contact-email,
+    .contact-phone {
+        font-size: 1.7em;
+    }
+
+    .contact-subtitle {
+        font-size: 2em;
+    }
+    
+    .contact-social-media-container {
+        width: 80%;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 100%;
+    }
+    
+    .contact-social-media-container>a {
+        width: 40%;
+    }
+    
+    footer {
+        height: 20vh;
+    }
+
+    .footer-header {
+        font-size: 1.7em;
     }
 }
