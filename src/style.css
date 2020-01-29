@@ -642,6 +642,7 @@ footer {
 
     .home-section.active {
         grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 50% 30% 8% 12%;
     }
 
     .mask {
@@ -662,6 +663,8 @@ footer {
 
     .scroll-bttn {
         grid-area: 3/1/4/3;
+        align-self: center;
+        height: 100%;
     }
 
     .scroll-bttn>img {
@@ -671,6 +674,7 @@ footer {
 
     .scroll-call {
         grid-area: 4/1/5/3;
+        font-size: 1.5em;
         opacity: 0.5;
     }
 
