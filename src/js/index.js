@@ -83,7 +83,7 @@ function isHomeActiveMobile() {
     logoStroke.setAttribute('stroke', '');
     changeIconPathColor(iconPathOne, '#000000');
     changeIconPathColor(iconPathTwo, '#ffffff');
-    changeMenuLinksColor('#000000', sectionLinksContainer);
+    changeMenuLinksColor('black', sectionLinksContainer);
 };
 
 function isHomeActiveDesktop() {
@@ -93,7 +93,7 @@ function isHomeActiveDesktop() {
     logoStroke.setAttribute('stroke', '#ffffff');
     changeIconPathColor(iconPathOne, '#ffffff');
     changeIconPathColor(iconPathTwo, '#000000');
-    changeMenuLinksColor('#ffffff', sectionLinksContainer);
+    changeMenuLinksColor('white', sectionLinksContainer);
 };
 
 function isntHomeActive() {
@@ -103,7 +103,7 @@ function isntHomeActive() {
     logoStroke.setAttribute('stroke', '#000000');
     changeIconPathColor(iconPathOne, '#000000');
     changeIconPathColor(iconPathTwo, '#ffffff');
-    changeMenuLinksColor('#000000', sectionLinksContainer);
+    changeMenuLinksColor('black', sectionLinksContainer);
 };
 
 function changeIconPathColor(arr, color) {
@@ -114,7 +114,15 @@ function changeIconPathColor(arr, color) {
 
 function changeMenuLinksColor(color, arr) {
     arr.forEach(element => {
-        element.style.color = `${color}`;
+        if(element.classList.contains('white') && color != 'white'){
+            element.classList.remove('white');
+            element.classList.add(`${color}`);
+        } else if (element.classList.contains('black') && color != 'black'){
+            element.classList.remove('black');
+            element.classList.add(`${color}`);
+        } else {
+            element.classList.add(`${color}`);
+        }
     });
 };
 

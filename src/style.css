@@ -117,6 +117,14 @@ ul {
     padding-left: 10%;
 }
 
+.black{
+    color: #000000;
+}
+
+.white{
+    color: #ffffff;
+}
+
 .social-media-links {
     width: 100%;
     padding-left: 10%;
@@ -610,6 +618,7 @@ footer {
     }
 
     .section-links-container>a:hover,
+    .section-links-container>a:focus,
     .contact-email:hover,
     .contact-phone:hover {
         color: #2c7cff;
