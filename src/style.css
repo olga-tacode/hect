@@ -746,4 +746,39 @@ footer {
         margin: 20px 0 20px 0;
     }
 
+    .about-section.active {
+        grid-template-rows: 15vh 10vh 60vh auto 35vh;
+        grid-template-columns: 22.5% 55% 22.5%;
+    }
+    
+    .about-title {
+        grid-area: 2/2/3/3;
+        padding: 0;
+    }
+    
+    .about-img {
+        grid-area: 3/2/4/3;
+    }
+    
+    .about-text-container {
+        grid-area: 4/2/5/3;
+    }
+    
+    .about-text-container>p {
+        padding: 5% 0 0 0;
+        font-size: 1.4em;
+    }
+    
+    .about-contact-container {
+        width: 35%;
+        height: 35%;
+        align-self: flex-start;
+        justify-self: left;
+        grid-area: 5/2/6/3;
+        margin-top: 7%;
+    }
+    
+    .about-contact-container>h2 {
+        font-size: 1.3em;
+    }
 }
