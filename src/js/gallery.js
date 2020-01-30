@@ -9,6 +9,7 @@ const fashionLink = document.getElementById('fashion');
 let slideIndex;
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
+const counter = document.getElementById('counter');
 
 function obtainingJsonData(id) {
     fetch('./src/photos.json')
@@ -146,6 +147,7 @@ function checkingSlideIndex(n, len, arr) {
     } else {
         paintSlide(forCheckingIndex, arr)
     }
+    counter.innerHTML = `${slideIndex+1}/${slideLen+1}`
 }
 
 function paintSlide(slideIndex, arr) {
