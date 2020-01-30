@@ -3,9 +3,12 @@ const photoCategoriesLinks = document.querySelectorAll('.portfolio-categories');
 const modal = document.querySelector('.modal');
 const carousel = document.querySelector('.carousel');
 const closeModalBttn = document.getElementById('close-modal');
-let slideIndex = 1;
 const portfolioLink = document.getElementById('portfolio-link');
 const scrollButton = document.getElementById('scroll-bttn');
+const fashionLink = document.getElementById('fashion');
+let slideIndex;
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
 
 function obtainingJsonData(id) {
     fetch('./src/photos.json')
@@ -39,7 +42,6 @@ const loopingFilteredArr = arr => {
 const paintPhotos = photo => {
     let dataToHTML = `
     <div class="container ${photo.class} ${photo.category}" id="${photo.num}">
-        <button class="close-photo-bttn button-style"><img src="./src/assets/close-menu.svg" alt="Botón para cerrar modal" /></button>
         <img class="item" src="${photo.url}"/>
     </div>`;
     gallery.insertAdjacentHTML('beforeend', dataToHTML);
@@ -50,7 +52,7 @@ const openPhoto = (photosArr) => {
     arr.forEach(element => {
         element.addEventListener('click', (event) => {
             event.preventDefault();
-            paintBrandingPhotos(photosArr);
+            paintBrandingPhotos(photosArr, parseInt(element.id));
         });
     });
 }
@@ -81,20 +83,17 @@ const handlingCategoriesOnClick = (categoriesCollection, photosCollection) => {
 
 const filteringBrandinPhotos = (id, photos) => {
     let filteredArr = photos.filter(photo => photo.subcategory === id);
-    paintBrandingPhotos(filteredArr);
+    paintBrandingPhotos(filteredArr, 0);
 };
 
 /* --------------------------- Modal of branding section + carousel -------------------------------- */
 
-const paintBrandingPhotos = arr => {
+const paintBrandingPhotos = (arr, id) => {
     modal.classList.add('active');
-    arr.forEach(element => {
-        let dataToCarousel = `
-        <img class="mySlides" src="${element.url}" style="width:100%; height: 100%; object-fit: contain;"/>`
-        carousel.insertAdjacentHTML('beforeend', dataToCarousel);
+    let imgArray = arr.map((img) => {
+        return `<img class="mySlides" id="${img.num}" src="${img.url}" style="width:100%; height: 100%; display:none; object-fit: contain;"/>`
     });
-    showDivs(slideIndex = 1);
-    changeImg();
+    loopingImages(imgArray, id);
     closeModal();
 };
 
@@ -102,39 +101,62 @@ const closeModal = () => {
     closeModalBttn.addEventListener('click', () => {
         modal.classList.remove('active');
         carousel.innerHTML = '';
+        slideIndex = '';
     })
 };
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
+let slides;
+let slideLen;
 
-function showDivs(n) {
-    let i;
-    const x = document.getElementsByClassName('mySlides');
-    if (n > x.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = x.length
-    }
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = 'none';
-    }
-    x[slideIndex - 1].style.display = 'block';
-}
-
-const prevBtn = document.getElementById('prev');
-const nextBtn = document.getElementById('next');
-
-const changeImg = () => {
-    prevBtn.addEventListener('click', () => {
-        plusDivs(-1)
+function loopingImages(arr, id) {
+    arr.forEach(element => {
+        carousel.insertAdjacentHTML('beforeend', element);
     });
-    nextBtn.addEventListener('click', () => {
-        plusDivs(1)
-    });
+    slides = document.querySelectorAll('.mySlides');
+    showSlides(id);
 };
+
+
+function showSlides(id) {
+    slideLen = slides.length - 1;
+    slideIndex = id;
+    checkingSlideIndex(slideIndex, slideLen, slides);
+};
+
+
+    prev.addEventListener('click', (event) => {
+        event.preventDefault();
+        checkingSlideIndex(slideIndex += -1, slideLen, slides);
+    });
+    next.addEventListener('click', (event) => {
+        event.preventDefault();
+        checkingSlideIndex(slideIndex += 1, slideLen, slides);
+    });
+
+function checkingSlideIndex(n, len, arr) {
+    let forCheckingIndex = n;
+    if (n > len) {
+        forCheckingIndex = 0;
+        slideIndex = 0;
+        paintSlide(forCheckingIndex, arr);
+    } else if (n < 0) {
+        forCheckingIndex = len;
+        slideIndex = len;
+        paintSlide(forCheckingIndex, arr)
+    } else {
+        paintSlide(forCheckingIndex, arr)
+    }
+}
+
+function paintSlide(slideIndex, arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (i === slideIndex) {
+            arr[slideIndex].style.display = "block";
+        } else {
+            arr[i].style.display = "none";
+        }
+    }
+}
 
 /* --------------------------- Function that changes link color when is activated -------------------------------- */
 
@@ -159,6 +181,7 @@ photoCategoriesLinks.forEach(category => {
 
 portfolioLink.addEventListener('click', () => {
     obtainingJsonData('fashion');
+    coloringLinksCategories(photoCategoriesLinks, fashionLink);
 });
 
 scrollButton.addEventListener('click', () => {

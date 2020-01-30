@@ -1,5 +1,6 @@
 const filmGallery = document.getElementById("film-gallery");
 const filmCategoriesLinks = document.querySelectorAll(".film-categories");
+const adLink = document.getElementById('ad');
 
 function obtainDataJson(id) {
   fetch("./src/videos.json")
@@ -52,6 +53,7 @@ filmCategoriesLinks.forEach(category => {
 
 const openData = () => {
   obtainDataJson("ad");
+  coloringVideoCategories(filmCategoriesLinks, adLink);
 };
 
 document.getElementById("film-link").addEventListener("click", openData);

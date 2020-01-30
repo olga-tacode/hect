@@ -147,6 +147,7 @@ sectionLinksObj.forEach(element => {
             listeningScreenWidth(w);
             if (event.target.classList.contains(page.id)) {
                 page.classList.add('active');
+                window.scrollTo(0,0);
             } else {
                 page.classList.remove('active');
             }

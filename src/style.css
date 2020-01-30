@@ -707,6 +707,10 @@ footer {
         grid-auto-rows: 35vh;
     }
 
+    .gallery>div{
+        cursor: pointer;
+    }
+
     .wider {
         grid-column: span 1;
         grid-row: span 1;
