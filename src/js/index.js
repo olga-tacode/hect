@@ -172,7 +172,6 @@ scrollBttn.addEventListener('click', (event) => {
     portfolioSection.classList.add('active');
     hamburgerIconColor();
     listeningScreenWidth(w);
-    scrolling();
 });
 
 logo.addEventListener('click', (event) => {
@@ -187,12 +186,3 @@ logo.addEventListener('click', (event) => {
         }
     });
 });
-
-function scrolling() {
-    gsap.fromTo(portfolioSection, {
-        yPercent: 100
-    }, {
-        duration: 1,
-        yPercent: 0
-    })
-};
