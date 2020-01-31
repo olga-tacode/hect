@@ -17,7 +17,9 @@ const iconPathOne = document.querySelectorAll('.icon-path-one');
 const iconPathTwo = document.querySelectorAll('.icon-path-two');
 const sectionLinksContainer = document.querySelectorAll('.section-links-container a');
 const logo = document.getElementById('logo');
-
+const homeLink = document.getElementById('menu-home-link');
+const socialMediaHeader = document.querySelectorAll('.social-media-header');
+const portfolioSection = document.getElementById('portfolio');
 /* ----------------- Home elements ---------------------- */
 
 const homeSection = document.getElementById('home');
@@ -60,12 +62,14 @@ window.addEventListener(
 
 function listeningScreenWidth(w) {
     if (w <= 1024) {
+        homeLink.style.display = 'block';
         if (homeSection.classList.contains('active')) {
             isHomeActiveMobile();
         } else {
             isntHomeActive();
         }
     } else {
+        homeLink.style.display = 'none';
         if (homeSection.classList.contains('active')) {
             isHomeActiveDesktop();
         } else {
@@ -114,16 +118,22 @@ function changeIconPathColor(arr, color) {
 
 function changeMenuLinksColor(color, arr) {
     arr.forEach(element => {
-        if(element.classList.contains('white') && color != 'white'){
+        if (element.classList.contains('white') && color != 'white') {
             element.classList.remove('white');
             element.classList.add(`${color}`);
-        } else if (element.classList.contains('black') && color != 'black'){
+        } else if (element.classList.contains('black') && color != 'black') {
             element.classList.remove('black');
             element.classList.add(`${color}`);
         } else {
             element.classList.add(`${color}`);
         }
     });
+};
+
+function removeSocialMedia(arr, style) {
+    arr.forEach(element => {
+        element.style.display = `${style}`;
+    })
 };
 
 /* ----------------- DOM events ---------------------- */
@@ -147,7 +157,7 @@ sectionLinksObj.forEach(element => {
             listeningScreenWidth(w);
             if (event.target.classList.contains(page.id)) {
                 page.classList.add('active');
-                window.scrollTo(0,0);
+                window.scrollTo(0, 0);
             } else {
                 page.classList.remove('active');
             }
@@ -162,6 +172,7 @@ scrollBttn.addEventListener('click', (event) => {
     portfolioSection.classList.add('active');
     hamburgerIconColor();
     listeningScreenWidth(w);
+    scrolling();
 });
 
 logo.addEventListener('click', (event) => {
@@ -176,3 +187,12 @@ logo.addEventListener('click', (event) => {
         }
     });
 });
+
+function scrolling() {
+    gsap.fromTo(portfolioSection, {
+        yPercent: 100
+    }, {
+        duration: 1,
+        yPercent: 0
+    })
+};
