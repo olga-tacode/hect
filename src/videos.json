@@ -24,6 +24,12 @@
     "poster": "https://video-hect2020.s3-us-west-2.amazonaws.com/video/Institutional/DDR.jpg"
   },
   {
+    "category": "institutional",
+    "num": "2",
+    "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Spot/ESSA+WEB+H.264.mov",
+    "poster": "https://video-hect2020.s3-us-west-2.amazonaws.com/video/Spot/ESSA.jpg"
+  },
+  {
     "category": "spot",
     "num": "1",
     "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Spot/American+Express+Benny+Ibarra.mov",
@@ -38,30 +44,24 @@
   {
     "category": "spot",
     "num": "3",
-    "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Spot/ESSA+WEB+H.264.mov",
-    "poster": "https://video-hect2020.s3-us-west-2.amazonaws.com/video/Spot/ESSA.jpg"
-  },
-  {
-    "category": "spot",
-    "num": "4",
     "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Spot/Mazatlan.mov",
     "poster": "https://video-hect2020.s3-us-west-2.amazonaws.com/video/Spot/Mazatlan.jpg"
   },
   {
     "category": "spot",
-    "num": "5",
+    "num": "4",
     "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Spot/Mexico+Produce.mov",
     "poster": "https://video-hect2020.s3-us-west-2.amazonaws.com/video/Spot/Mex.jpg"
   },
   {
     "category": "spot",
-    "num": "6",
+    "num": "5",
     "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Spot/PRONAFIM%2CSE.mov",
     "poster": "https://video-hect2020.s3-us-west-2.amazonaws.com/video/Spot/PROMA.jpg"
   },
   {
     "category": "spot",
-    "num": "7",
+    "num": "6",
     "url": "https://d2yiy1zyr2g9dt.cloudfront.net/video/Spot/Sayula+60seg+Director.mov",
     "poster": "https://video-hect2020.s3-us-west-2.amazonaws.com/video/Spot/Sayula.jpg"
   }
