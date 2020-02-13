@@ -422,7 +422,7 @@ main {
   margin: 0 10% 0 10%;
   font-family: "Marvel", sans-serif;
   font-size: 1.2em;
-  width: 50%;
+  width: 81%;
 }
 
 #film-gallery {
@@ -713,7 +713,7 @@ footer {
   .porfolio-categories-container,
   .film-categories-container {
     grid-area: 3/1/4/2;
-    width: 40%;
+    width: 70%;
     margin: 0 0 0 8%;
     font-size: 1.8em;
   }
@@ -763,7 +763,7 @@ footer {
   }
 
   .film-section.active {
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20% 60% 50%;
     grid-template-rows: 15vh 0vh 10vh auto;
   }
 
